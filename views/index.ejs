@@ -1,0 +1,9 @@
+	<h1>Azure AD Nodejs Test- Esquel LPD Project</h1>
+<% if (!user) { %>
+	<h2>你好，你还未登陆</h2>
+	<a href="/login">登陆</a>
+<% } else { %>
+	<h2>你好, <%= user.displayName %>.</h2>
+	<a href="/account">当前用户信息</a></br>
+	<a href="/logout">退出登陆</a>
+<% } %>

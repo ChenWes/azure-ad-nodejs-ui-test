@@ -1,0 +1,11 @@
+<% if (!user) { %>
+	<h2>你好</h2>
+	<a href="/login">登陆</a>
+<% } else { %>
+<p>UPN: <%= user._json.upn %></p>
+<p>Profile ID: <%= user.id %></p>
+<p>Full Claimes</p>
+<%- JSON.stringify(user) %>
+<p></p>
+<a href="/logout">退出登陆</a>
+<% } %>
